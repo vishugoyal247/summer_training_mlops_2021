@@ -1,0 +1,11 @@
+Dependencies:
+1.Install python and webserver
+2. Give sudo permission to root
+3. Copy this code in /var/www/
+4. Change ip in every python cgi file with your host ip
+5. Disable selinux and firewalld with following cmd:
+    setenforce 0
+    systemctl stop firewalld
+6. Make cgi-bin files executable with following cmd:
+    chmod +x *
+   Note: run in cmd in cgi-bin dir
